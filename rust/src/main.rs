@@ -1,4 +1,5 @@
 use std::{sync::Arc, collections::BTreeMap};
+use futures::future::join_all;
 use parking_lot::Mutex;
 
 #[tokio::main(flavor = "current_thread")]
@@ -9,9 +10,7 @@ async fn main() {
         let target = target.clone();
         tasks.push(tokio::spawn(async move { target.lock().insert(num, num) }));
     }
-    for task in tasks.into_iter() {
-        task.await.unwrap();
-    }
+    join_all(tasks).await;
     let locked = target.lock();
     println!("{} items pushed into target.", locked.len());
 }

@@ -40,20 +40,20 @@ Inspired by Piotr Kołaczkowski's blog post "How Much Memory Do You Need to Run 
 ```
 1000000 items pushed into target.
     Command being timed: "rust-multithread/target/release/rust"
-    User time (seconds): 2.23
-    System time (seconds): 1.62
-    Percent of CPU this job got: 536%
-    Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.72
+    User time (seconds): 2.98
+    System time (seconds): 1.54
+    Percent of CPU this job got: 599%
+    Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.75
     Average shared text size (kbytes): 0
     Average unshared data size (kbytes): 0
     Average stack size (kbytes): 0
     Average total size (kbytes): 0
-    Maximum resident set size (kbytes): 151552
+    Maximum resident set size (kbytes): 264016
     Average resident set size (kbytes): 0
     Major (requiring I/O) page faults: 0
-    Minor (reclaiming a frame) page faults: 9516
-    Voluntary context switches: 298903
-    Involuntary context switches: 92266
+    Minor (reclaiming a frame) page faults: 17033
+    Voluntary context switches: 251548
+    Involuntary context switches: 164696
     Swaps: 0
     File system inputs: 0
     File system outputs: 0
@@ -69,18 +69,18 @@ Inspired by Piotr Kołaczkowski's blog post "How Much Memory Do You Need to Run 
 ```
 1000000 items pushed into target.
     Command being timed: "rust/target/release/rust"
-    User time (seconds): 0.18
-    System time (seconds): 0.00
+    User time (seconds): 0.28
+    System time (seconds): 0.01
     Percent of CPU this job got: 99%
-    Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.19
+    Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.30
     Average shared text size (kbytes): 0
     Average unshared data size (kbytes): 0
     Average stack size (kbytes): 0
     Average total size (kbytes): 0
-    Maximum resident set size (kbytes): 142336
+    Maximum resident set size (kbytes): 236032
     Average resident set size (kbytes): 0
     Major (requiring I/O) page faults: 0
-    Minor (reclaiming a frame) page faults: 8856
+    Minor (reclaiming a frame) page faults: 14745
     Voluntary context switches: 1
     Involuntary context switches: 0
     Swaps: 0
